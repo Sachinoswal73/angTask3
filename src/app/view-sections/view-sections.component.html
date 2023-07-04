@@ -1,0 +1,37 @@
+<h3>View Sections</h3>
+<br>
+<!-- <p-accordion> -->
+<p-accordion [multiple]="true">
+	
+    <!-- <p-accordionTab 
+        header="Angular PrimeNG" 
+        [selected]="true"
+        >
+		    <p>
+			    dantium dicta nisi voluptas corrupti, 
+		    </p>
+	</p-accordionTab> -->
+	
+    <p-accordionTab 
+        *ngFor="let ra of rcvdArr; let i = index"
+        [selected]="i == 0 ? true : false"
+        [header]="ra.shdr"
+        >
+		    <p>
+			    {{ ra.sdlt }} 
+		    </p>
+	</p-accordionTab>
+
+    <!-- <p-accordionTab header="Angular PrimeNG" [selected]="true">
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam laborum eaque, laudantium dicta nisi voluptas corrupti, 
+		</p>
+	</p-accordionTab>
+	
+    <p-accordionTab header="Angular PrimeNG">
+		<p>
+			Lorem ipsum dolor sit amet consectetur 
+		</p>
+	</p-accordionTab> -->
+	
+</p-accordion>

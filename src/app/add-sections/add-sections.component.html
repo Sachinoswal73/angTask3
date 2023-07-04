@@ -1,0 +1,31 @@
+<h3>Add Section</h3>
+<br>
+<form [formGroup]="sForm3" (ngSubmit)="addSec()">
+    <div class="form-group">
+        <label for="sheader">Section Header</label>
+        <input type="text" 
+            name="" 
+            id="sheader"
+            class="form-control w-75 mb-2"
+            formControlName="shdr"
+            >
+        
+        <label for="sdetails">Section Details</label>
+        <textarea 
+            name="" 
+            id="sdetails"  
+            rows="4"
+            class="form-control mb-3"
+            formControlName="sdtl"
+            >
+        </textarea>
+
+        <button
+            type="submit" 
+            value="" 
+            class="btn btn-primary"
+            >
+            Add 
+        </button>
+    </div>
+</form>
